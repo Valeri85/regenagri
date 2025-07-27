@@ -1,0 +1,22 @@
+@custom-media --watch (inline-size: 240px);
+@custom-media --small-phone (inline-size: 280px);
+@custom-media --phone (inline-size: 320px);
+@custom-media --smartphone (inline-size: 375px);
+@custom-media --phablet (inline-size: 480px);
+@custom-media --tablet (inline-size: 768px);
+@custom-media --small-laptop (inline-size: 992px);
+@custom-media --laptop (inline-size: 1024px);
+@custom-media --desktop (inline-size: 1280px);
+@custom-media --tv (inline-size: 1920px);
+
+@custom-media --OSdark (prefers-color-scheme: dark);
+@custom-media --OSlight (prefers-color-scheme: light);
+
+@custom-media --mouse (hover) and (pointer: fine);
+@custom-media --touch (hover: none) and (pointer: coarse);
+
+@custom-media --motionOK (prefers-reduced-motion: no-preference);
+@custom-media --motionNotOK (prefers-reduced-motion: reduce);
+
+@custom-media --highContrast (prefers-contrast: more);
+@custom-media --lowContrast (prefers-contrast: less);

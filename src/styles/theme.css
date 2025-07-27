@@ -1,0 +1,35 @@
+:root {
+	color-scheme: light dark;
+
+	--color-white: hsl(0 0% 100%);
+	--color-black: hsl(0 0% 0%);
+
+	--color-text: var(--color-black);
+	--color-text-inverse: var(--color-white);
+
+	--color-link: var(--color-black);
+	--color-link-inverse: var(--color-white);
+
+	@media (--OSlight) {
+		color-scheme: light;
+	}
+
+	@media (--OSdark) {
+		color-scheme: dark;
+
+		--color-text: var(--color-text-inverse);
+		--color-link: var(--color-link-inverse);
+	}
+}
+
+body {
+	color: var(--color-text);
+}
+
+a {
+	color: var(--color-link);
+}
+
+button {
+	color: var(--color-button);
+}
