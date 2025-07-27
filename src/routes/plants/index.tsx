@@ -8,10 +8,10 @@ export default component$(() => {
 			<h2>Sub-category</h2>
 			<ul>
 				<li>
-					<Link href={`/plants/ertwliani`}>Annual Plants</Link>
+					<Link href={`/plants/annual`}>Annual Plants</Link>
 				</li>
 				<li>
-					<Link href={`/plants/mravalwliani`}>Perennial Plants</Link>
+					<Link href={`/plants/perennial`}>Perennial Plants</Link>
 				</li>
 			</ul>
 		</div>

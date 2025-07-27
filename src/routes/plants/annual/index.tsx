@@ -8,15 +8,15 @@ export default component$(() => {
 			<ul>
 				<li>
 					{/* სორგო */}
-					<Link href={`/plants/ertwliani/sorgo`}>Sorghum</Link>
+					<Link href={`/plants/annual/sorghum`}>Sorghum</Link>
 				</li>
 				<li>
 					{/* მიწავაშლა */}
-					<Link href={`/plants/ertwliani/miwavashla`}>Jerusalem Artichoke</Link>
+					<Link href={`/plants/annual/jerusalem-artichoke`}>Jerusalem Artichoke</Link>
 				</li>
 				<li>
 					{/* მზესუმზირა */}
-					<Link href={`/plants/ertwliani/mzesumzira`}>Sunflower</Link>
+					<Link href={`/plants/annual/sunflower`}>Sunflower</Link>
 				</li>
 			</ul>
 		</>

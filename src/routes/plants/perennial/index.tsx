@@ -8,27 +8,27 @@ export default component$(() => {
 			<ul>
 				<li>
 					{/* კუძუ */}
-					<Link href={`/plants/mravalwliani/kudzu`}>Pueraria</Link>
+					<Link href={`/plants/perennial/pueraria`}>Pueraria</Link>
 				</li>
 				<li>
 					{/* სალბი */}
-					<Link href={`/plants/mravalwliani/salbi`}>Salvia</Link>
+					<Link href={`/plants/perennial/salvia`}>Salvia</Link>
 				</li>
 				<li>
 					{/* ტირიფი */}
-					<Link href={`/plants/mravalwliani/tirifi`}>Willow</Link>
+					<Link href={`/plants/perennial/willow`}>Willow</Link>
 				</li>
 				<li>
 					{/* მუხა */}
-					<Link href={`/plants/mravalwliani/mukha`}>Oak</Link>
+					<Link href={`/plants/perennial/oak`}>Oak</Link>
 				</li>
 				<li>
 					{/* თუთა */}
-					<Link href={`/plants/mravalwliani/tuta`}>Mulberries</Link>
+					<Link href={`/plants/perennial/mulberries`}>Mulberries</Link>
 				</li>
 				<li>
 					{/* უნაბი */}
-					<Link href={`/plants/mravalwliani/unabi`}>Jujube</Link>
+					<Link href={`/plants/perennial/jujube`}>Jujube</Link>
 				</li>
 			</ul>
 		</>
