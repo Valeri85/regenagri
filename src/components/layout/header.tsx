@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { Link, useLocation } from '@builder.io/qwik-city';
+import { ThemeToggle } from '../theme/theme-toggle';
 
 export const Header = component$(() => {
   const location = useLocation();
@@ -25,6 +26,7 @@ export const Header = component$(() => {
           >
             Plants
           </Link>
+          <ThemeToggle />
         </div>
       </nav>
     </header>
