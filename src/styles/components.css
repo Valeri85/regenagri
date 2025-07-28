@@ -1,0 +1,343 @@
+/* Layout Components */
+.app-layout {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-content {
+	flex: 1;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 var(--spacer-100);
+}
+
+/* Header */
+.header {
+	background: var(--color-background);
+	border-bottom: 1px solid var(--color-border);
+	position: sticky;
+	top: 0;
+	z-index: var(--layer-10);
+	backdrop-filter: blur(8px);
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--spacer-100) var(--spacer-150);
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: var(--spacer-050);
+	font-weight: 700;
+	font-size: var(--font-size-20px);
+	text-decoration: none;
+	color: var(--color-primary);
+}
+
+.logo-icon {
+	font-size: var(--font-size-24px);
+}
+
+.nav-links {
+	display: flex;
+	gap: var(--spacer-200);
+}
+
+.nav-link {
+	padding: var(--spacer-050) var(--spacer-100);
+	border-radius: var(--border-radius-6);
+	font-weight: 500;
+	transition: all 0.2s ease;
+	
+	&:hover {
+		background: var(--color-surface);
+	}
+	
+	&.active {
+		background: var(--color-primary);
+		color: var(--color-white);
+	}
+}
+
+/* Hero Section */
+.hero {
+	background: var(--gradient-hero);
+	padding: var(--spacer-400) var(--spacer-150);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--spacer-300);
+	align-items: center;
+	min-height: 70vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-content {
+	max-width: 600px;
+}
+
+.hero-title {
+	font-size: var(--font-size-h1);
+	font-weight: 800;
+	line-height: 1.1;
+	margin-bottom: var(--spacer-100);
+	color: var(--color-primary);
+}
+
+.hero-subtitle {
+	display: block;
+	font-size: var(--font-size-h3);
+	font-weight: 400;
+	color: var(--color-text-muted);
+	margin-top: var(--spacer-050);
+}
+
+.hero-description {
+	font-size: var(--font-size-18px);
+	line-height: 1.6;
+	color: var(--color-text-muted);
+	margin-bottom: var(--spacer-200);
+}
+
+.hero-stats {
+	display: flex;
+	gap: var(--spacer-200);
+}
+
+.stat {
+	text-align: center;
+}
+
+.stat-number {
+	display: block;
+	font-size: var(--font-size-30px);
+	font-weight: 700;
+	color: var(--color-primary);
+}
+
+.stat-label {
+	font-size: var(--font-size-small);
+	color: var(--color-text-muted);
+}
+
+.hero-visual {
+	position: relative;
+	height: 400px;
+}
+
+.floating-elements {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.element {
+	position: absolute;
+	font-size: 3rem;
+	animation: float 6s ease-in-out infinite;
+}
+
+.element-1 {
+	top: 20%;
+	left: 20%;
+	animation-delay: 0s;
+}
+
+.element-2 {
+	top: 60%;
+	left: 70%;
+	animation-delay: 1.5s;
+}
+
+.element-3 {
+	top: 10%;
+	right: 10%;
+	animation-delay: 3s;
+}
+
+.element-4 {
+	bottom: 20%;
+	left: 60%;
+	animation-delay: 4.5s;
+}
+
+@keyframes float {
+	0%, 100% { transform: translateY(0px) rotate(0deg); }
+	50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+/* Page Headers */
+.page-header {
+	text-align: center;
+	margin-bottom: var(--spacer-300);
+	padding: var(--spacer-300) 0;
+}
+
+.page-title {
+	font-size: var(--font-size-h2);
+	font-weight: 700;
+	margin-bottom: var(--spacer-100);
+	color: var(--color-primary);
+}
+
+.page-description {
+	font-size: var(--font-size-18px);
+	color: var(--color-text-muted);
+	max-width: 800px;
+	margin: 0 auto;
+	line-height: 1.6;
+}
+
+/* Section Styling */
+.categories-section {
+	padding: var(--spacer-400) 0;
+}
+
+.section-title {
+	font-size: var(--font-size-h2);
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: var(--spacer-100);
+	color: var(--color-primary);
+}
+
+.section-description {
+	font-size: var(--font-size-18px);
+	color: var(--color-text-muted);
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto var(--spacer-300);
+	line-height: 1.6;
+}
+
+/* Grid Layouts */
+.categories-grid,
+.plants-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: var(--spacer-150);
+	margin-top: var(--spacer-200);
+}
+
+/* Plant Cards */
+.plant-card {
+	background: var(--color-white);
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius-10);
+	padding: var(--spacer-150);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	box-shadow: var(--shadow-sm);
+	
+	&:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-lg);
+		border-color: var(--color-primary);
+	}
+}
+
+.plant-card-content {
+	flex: 1;
+}
+
+.plant-card-icon {
+	font-size: var(--font-size-30px);
+	margin-bottom: var(--spacer-075);
+}
+
+.plant-card-title {
+	font-size: var(--font-size-20px);
+	font-weight: 600;
+	margin-bottom: var(--spacer-025);
+	color: var(--color-text);
+}
+
+.plant-card-category {
+	display: inline-block;
+	background: var(--color-surface);
+	color: var(--color-text-muted);
+	font-size: var(--font-size-small);
+	padding: var(--spacer-025) var(--spacer-075);
+	border-radius: var(--border-radius-4);
+	margin-bottom: var(--spacer-075);
+}
+
+.plant-card-description {
+	color: var(--color-text-muted);
+	font-size: var(--font-size-small);
+	line-height: 1.5;
+}
+
+.plant-card-arrow {
+	font-size: var(--font-size-24px);
+	color: var(--color-primary);
+	margin-left: var(--spacer-100);
+	transition: transform 0.2s ease;
+}
+
+.plant-card:hover .plant-card-arrow {
+	transform: translateX(4px);
+}
+
+/* Page Containers */
+.home-page,
+.plants-page,
+.annual-plants-page,
+.perennial-plants-page {
+	min-height: 100vh;
+}
+
+.plants-page,
+.annual-plants-page,
+.perennial-plants-page {
+	padding: var(--spacer-200) 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.hero {
+		grid-template-columns: 1fr;
+		text-align: center;
+		padding: var(--spacer-200) var(--spacer-100);
+	}
+	
+	.hero-visual {
+		height: 200px;
+	}
+	
+	.nav {
+		padding: var(--spacer-075) var(--spacer-100);
+	}
+	
+	.nav-links {
+		gap: var(--spacer-100);
+	}
+	
+	.hero-stats {
+		justify-content: center;
+		gap: var(--spacer-150);
+	}
+	
+	.container {
+		padding: 0 var(--spacer-075);
+	}
+	
+	.categories-grid,
+	.plants-grid {
+		grid-template-columns: 1fr;
+		gap: var(--spacer-100);
+	}
+}
