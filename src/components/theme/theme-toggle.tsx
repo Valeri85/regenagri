@@ -12,6 +12,7 @@ export const ThemeToggle = component$(() => {
         theme.setColorMode(newMode);
       }}
       aria-label={`Switch to ${theme.colorMode === 'light' ? 'dark' : 'light'} mode`}
+      title={`Switch to ${theme.colorMode === 'light' ? 'dark' : 'light'} mode`}
     >
       <span class="theme-toggle-icon">
         {theme.colorMode === 'light' ? '🌙' : '☀️'}

@@ -1,46 +1,17 @@
 :root {
-	color-scheme: light dark;
-
-	--color-white: hsl(0 0% 100%);
-	--color-black: hsl(0 0% 0%);
-
-	--color-text: var(--color-neutral-800);
-	--color-text-inverse: var(--color-white);
-	--color-text-muted: var(--color-neutral-600);
-
-	--color-link: var(--color-primary);
-	--color-link-inverse: var(--color-white);
-	--color-link-hover: var(--color-primary-dark);
-	
-	--color-background: var(--color-white);
-	--color-surface: var(--color-neutral-50);
-	--color-border: var(--color-neutral-200);
-
-	@media (--OSlight) {
-		color-scheme: light;
-	}
-
-	@media (--OSdark) {
-		color-scheme: dark;
-
-		--color-text: var(--color-neutral-100);
-		--color-text-muted: var(--color-neutral-400);
-		--color-link: var(--color-secondary);
-		--color-link-hover: var(--color-accent);
-		--color-background: var(--color-neutral-900);
-		--color-surface: var(--color-neutral-800);
-		--color-border: var(--color-neutral-700);
-	}
+	/* Theme colors are now managed by JavaScript */
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
 	background-color: var(--color-background);
 	color: var(--color-text);
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
 	color: var(--color-link);
-	transition: color 0.2s ease;
+	transition: color 0.3s ease;
 	
 	&:hover {
 		color: var(--color-link-hover);
@@ -49,4 +20,5 @@ a {
 
 button {
 	color: var(--color-text);
+	transition: color 0.3s ease, background-color 0.3s ease;
 }
